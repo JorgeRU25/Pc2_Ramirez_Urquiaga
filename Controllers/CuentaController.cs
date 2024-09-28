@@ -16,6 +16,12 @@ namespace PracticaCalificada2.Controllers
         {
             _logger = logger;
         }
+        public IActionResult bancaria()
+        {
+            return View();
+        }
+
+
 
         public IActionResult Index()
         {
