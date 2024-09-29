@@ -22,8 +22,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/benji/Documents/2024 - II/PROGRAMACION 1/PracticaCalificada2/Views/Cuenta/Bancaria.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXEJhbmNhcmlhLmNzaHRtbA==
+[C:/Users/benji/Documents/2024 - II/PROGRAMACION 1/PracticaCalificada2/Views/Cuenta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/benji/Documents/2024 - II/PROGRAMACION 1/PracticaCalificada2/Views/Cuenta/Listar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VlbnRhXExpc3Rhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/benji/Documents/2024 - II/PROGRAMACION 1/PracticaCalificada2/Views/Home/Index.cshtml]

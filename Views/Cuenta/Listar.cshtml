@@ -1,0 +1,27 @@
+@model PracticaCalificada2.Models.CuentaBancaria
+@{
+    ViewBag.Title = "Ordenes";
+    var listaCuentas = ViewData["listaCuentas"] as List<CuentaBancaria>;
+}
+
+<table class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>NombreTitular</th>
+            <th>TipoCuenta</th>
+            <th>SaldoInicial</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var orden in listaCuentas)
+        {
+            <tr>
+                <td>@orden.NombreTitular</td>
+                <td>@orden.TipoCuenta</td>
+                <td>@orden.SaldoInicial</td>
+                <td>@orden.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

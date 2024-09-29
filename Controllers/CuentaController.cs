@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using PracticaCalificada2.Models;
 
 namespace PracticaCalificada2.Controllers
 {
@@ -16,22 +17,21 @@ namespace PracticaCalificada2.Controllers
         {
             _logger = logger;
         }
-        public IActionResult bancaria()
-        {
-            return View();
-        }
-
-
 
         public IActionResult Index()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [HttpPost]
+        public IActionResult Registrar(CuentaBancaria cuentaBancaria)
         {
-            return View("Error!");
+            if (ModelState.IsValid)
+            {
+                ViewBag.Message = "Cuenta bancaria creada con éxito.";
+            }
+            return View("Index", cuentaBancaria);
         }
+
     }
 }
