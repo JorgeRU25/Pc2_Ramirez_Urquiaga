@@ -12,8 +12,8 @@ using PracticaCalificada2.Data;
 namespace PracticaCalificada2.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240929062445_MigracionInicial")]
-    partial class MigracionInicial
+    [Migration("20240929112543_MigracionTabla")]
+    partial class MigracionTabla
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -227,11 +227,11 @@ namespace PracticaCalificada2.Data.Migrations
 
             modelBuilder.Entity("PracticaCalificada2.Models.CuentaBancaria", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("bigint");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
 
                     b.Property<string>("Email")
                         .HasColumnType("text");
