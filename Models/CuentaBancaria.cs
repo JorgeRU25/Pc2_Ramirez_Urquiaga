@@ -1,12 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace PracticaCalificada2.Models
 {
+    [Table("t_cuentas")]
     public class CuentaBancaria
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }  // Identificador único de la cuenta
         public string? NombreTitular { get; set; }  // Nombre del titular de la cuenta
         public string? TipoCuenta { get; set; }  // Tipo de cuenta (Ej: Ahorros, Corriente)

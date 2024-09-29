@@ -9,4 +9,6 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+
+    public DbSet<PracticaCalificada2.Models.CuentaBancaria> Cuentas { get; set; }
 }
